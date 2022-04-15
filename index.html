@@ -10,19 +10,26 @@
 
 <body>
     <script>
-        switch (browser) {
-            case 'Edge':
-                alert("you are got the Edge!");
-                break;
-            case 'Chrome':
-            case 'Finefox':
-            case 'Safari':
-            case 'Opera':
-                alert('Okay we support these browsers too');
-                break;
-            default:
-                alert('we hope that this page look at ok!');
-        }
+        let weight = parseInt(prompt('Nhap can nang: '));
+        let height = parseInt(prompt('Nhap chieu cao: '));
+        bmi = weight / (height ** 2);
+        
+        if (bmi < 18) {
+            alert("underweight");
+            }
+        else if (bmi < 25.0) {
+            alert("Normail");
+            }
+        else if (bmi < 30.0) {
+            alert("Overweight");
+            }
+        else {
+            alert("Obese");
+            }
+        
+            console.log("Chỉ số cân nặng: " + bmi);
+        
     </script>
 </body>
+
 </html>
