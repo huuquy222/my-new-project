@@ -7,16 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Javascript</h2>
-    <p> id="demo"></p>
     <script>
-        let text ="";
-        let i;
-        for (i =0; i<5; i++) {
-            text += "the number is " + i + "<br>";
+        let num = Number(prompt("Enter a number: " ));
+        let total = 0;
+        while(num != -1) {
+            num = Number(prompt("Enter a number: "));
+            total += num
         }
-        documnet.getelementbyId("demo").innerHTML = text;
+        alert(total);
     </script>
-    
 </body>
 </html>
