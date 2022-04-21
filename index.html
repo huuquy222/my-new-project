@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript Array join</title>
 </head>
 <body>
     <script>
-        let numbers = [-3, 5, 1, 3, 2, 10];
-        let max = numbers[0];
-        let index = 0;
-        for (let i = 1; i < numbers.length; i++) {
-            if (numbers[i] > max) {
-                max = numbers[i];
-                index = i;
-            }
-            alert("max: " +max + " at position " + index);
-        }
+        let myColor = ["Red", "Green", "Whhite", "Black"];
+        document.write(myColor.toString());
+        document.write(mycolor.join());
+        document.write(mycolor.join('+'));
     </script>
 </body>
 </html>
