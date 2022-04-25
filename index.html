@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Document</title>
 </head>
-<br>
-    Feet:<input id="feet" type="number"  placeholder="Nhap feet" 
-        oninput="LengthConverter(this.value)"
-        onchange="LengthConverter(this.value)">
-    <label for="meter" id="outputMeters">Meter:</label>
-    <br></br>
-    Meter:<input id="meter" type="number" placeholder="Nhap meter"
-    oninput="LengthConverter2(this.value)"
-    onchange="LengthConverter2(this.value)">
-<label for="feet" id="outputFeet">Feet:</label>
-<script>
-     function LengthConverter(foot) {
-            document.getElementById('outputMeters').innerHTML = `${foot/3.279} meter`
+<body>
+    <script>
+        let MyDate = function(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        };
+        this.getDay = function() {
+            return this.day;
         }
-        function LengthConverter2(meter) {
-            document.getElementById('outputFeet').innerHTML = `${0.305 * meter} feet`
-            }
-</script>
+        this.getMonth = function() {
+            return this.month;
+        }
+        this.getYear = function() {
+            return this.year;
+        }
+        this.setDay = function(day) {
+            this.day = day;
+        }
+        this.setMonth = function(month) {
+            this.month = month;
+        }
+        this.setYear = function(year) {
+            this.year = year;
+        }
+        alert(day + "/" + month + "/" + year);
+    </script>
 </body>
 </html>
